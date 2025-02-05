@@ -3,29 +3,78 @@
 
 <HEAD>
     <TITLE> My first web page</TITLE>
+
+    <style>
+        body {
+            background-color: orange
+        }
+
+        button {
+            background-color: red;
+            box-shadow:
+                inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+                inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2) 30%,
+                    rgba(0, 0, 0, 0));
+            border-radius: 15px;
+
+        }
+
+        nav {
+            border-bottom: 4px solid black;
+        }
+
+        .crumb {
+            display: inline-block;
+            padding: 5px;
+            font-size: 30px;
+            
+        }
+        *{
+            font-family: Heroking;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+        @font-face {
+            font-family: Heroking;
+            src: local(Heroking);
+        }
+    </style>
 </HEAD>
 
 <body>
+    <!--menu-->
     <nav class="crumbs">
         <ol>
-          <li class="crumb"><a href="C:\dev\About me.html">About me</a></li>
-          <li class="crumb"><a href="C:\dev\My assignments.html">My Assignments</a></li>
+            <li class="crumb"><img width="60px" src="C:\dev\phoenix.png" /></li>
+            <li class="crumb"><a href="C:\dev\About_me.html">About me</a></li>
+            <li class="crumb"><a href="C:\dev\My_assignments.html">My Assignments</a></li>
         </ol>
+    </nav>
+    <!--nome e refresh-->
     <p>
-        <h1> Francesco Gentili</h1>
-        <a href=https://refresh-academy.org> <img width="474px" src="https://refresh-academy.org/wp-content/uploads/2024/05/logo.png"/> </a>
+    <h1> Francesco gentilI</h1>
+    <a href=https://refresh-academy.org > <img width="474px" style="display:block; margin:auto;"
+            src="https://refresh-academy.org/wp-content/uploads/2024/05/logo.png" /> </a>
     </p>
+
+    <!--animale totem-->
     <div>
-        <h3> Animale Totem </h3>
-        <img width="474px" src="https://masterpiecer-images.s3.yandex.net/0e0f74336ea211eeac94aaafe6635749:upscaled" alt="A hellcat." />
-    
+        <h2> Animale Totem </h2>
+        <img width="474px" style="padding-left: 10%;" src="https://masterpiecer-images.s3.yandex.net/0e0f74336ea211eeac94aaafe6635749:upscaled"
+            alt="A hellcat." />
     </div>
 
-    <h3> Hobby: fanfictions </h3>
-    <p> "Una fanfiction è uno scritto che contiene personaggi o ambientazioni di vari libri, anime, manga, film o serie Tv. Sono pubblicati online su siti apppositi da fan e sono accessibili gratuitamente."</p>
-
+    <!--hobby-->
+    <h2> Hobby: fanfictions </h2>
+    <p> "Una fanfiction è uno scritto che contiene personaggi o ambientazioni di vari libri, anime, manga, film o
+        serie Tv. Sono pubblicati online su siti apppositi da fan e sono accessibili gratuitamente."</p>
 </body>
 
-  
+
 
 </HTML>

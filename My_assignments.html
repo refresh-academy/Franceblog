@@ -3,19 +3,58 @@
 
 <HEAD>
     <TITLE> My assignments</TITLE>
+    <style type=text/css>
+        body {
+            background-color: orange
+        }
+
+        button {
+            background-color: red;
+            box-shadow:
+                inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+                inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+            background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2) 30%,
+                    rgba(0, 0, 0, 0));
+            border-radius: 15px;
+
+
+        }
+
+        nav {
+            border-bottom: 4px solid black;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::before {
+            display: inline-block;
+            color: #000;
+            content: '--';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+    </style>
 </HEAD>
 
 <body>
     <nav class="crumbs">
         <ol>
-          <li class="crumb"><a href="C:\dev\About me.html">About me</a></li>
-          <li class="crumb"><a href="C:\dev\My assignments.html">My Assignments</a></li>
+            <li class="crumb"><a href="C:\dev\About_me.html">About me</a></li>
+            <li class="crumb"><a href="C:\dev\My_assignments.html">My Assignments</a></li>
         </ol>
-    <button popovertarget="mypopover" popovertargetaction="show" style="font-size:20px;height:150px;width:300px"> Mostra Appunti </button>
-    
-    <div id="mypopover" popover=""> 
-        <button popovertarget="mypopover" popovertargetaction="hide" style="font-size:20px; height:150px; width:300px"> Nascondi Appunti</button>
-        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQQAyVdq-Txq9MzktZuYaW1Kkjok1oTO4e0ki9NjciSpxDnb49NHpk3ijxnmSJfKbX2mPZNhvaHlXVi/pub?embedded=true" width="640" height="718" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+    </nav>
+    <p></p>
+
+    <div>
+        <iframe
+            src="https://docs.google.com/document/d/e/2PACX-1vQQAyVdq-Txq9MzktZuYaW1Kkjok1oTO4e0ki9NjciSpxDnb49NHpk3ijxnmSJfKbX2mPZNhvaHlXVi/pub?embedded=true"
+            width="640" height="718" frameborder="0" marginheight="0" marginwidth="0"></iframe>
     </div>
 </body>
+
 </HTML>
