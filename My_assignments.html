@@ -18,35 +18,34 @@
                     rgba(0, 0, 0, 0.2) 30%,
                     rgba(0, 0, 0, 0));
             border-radius: 15px;
-
-
         }
-
-        nav {
+            nav {
             border-bottom: 4px solid black;
         }
 
         .crumb {
             display: inline-block;
+            padding: 5px;
+            font-size: 30px;
+            
         }
-
-        .crumb a::before {
-            display: inline-block;
-            color: #000;
-            content: '--';
-            font-size: 80%;
-            font-weight: bold;
-            padding: 0 3px;
+        *{
+            font-family: Heroking;
+        }
+        @font-face {
+            font-family: Heroking;
+            src: local(Heroking);
         }
     </style>
 </HEAD>
 
 <body>
     <nav class="crumbs">
-        <ol>
+        <ul>
+            <li class="crumb"><img width="60px" src="C:\dev\phoenix.png" /></li>
             <li class="crumb"><a href="C:\dev\About_me.html">About me</a></li>
             <li class="crumb"><a href="C:\dev\My_assignments.html">My Assignments</a></li>
-        </ol>
+        </ul>
     </nav>
     <p></p>
 
